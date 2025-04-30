@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #556b2f;
+  padding: 10px 20px;
+  /* background: url("logop.png");
+  background-size:cover; */
+}
+
+/* Logo */
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  
+}
+
+.navbar .logo img {
+  width: 130px;
+  height: auto;
+  margin-right: 10px;
+}
+
+
+.navbar .logo span {
+  color: #ecf0f1;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navbar links */
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  margin: 0 15px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #1abc9c;
+}
+.canvas{
+  display: none;
+}
+.offcanvas.offcanvas-start{
+  width: 218px;
+  background-color: whitesmoke;
+}
+.btn-secondary{
+  font-size: 0.85rem;
+  background-color: #556b2f;
+}
+.drop-item{
+  font-size: 0.85rem;
+}
+.dropdown-menu{
+  border: none;
+}
+.offcanvas-body{
+  padding-left: 5%;
+}
+.btn-primary{
+  background-color: #556b2f;
+  border: none;
+}
+.btn-primary:hover{
+  background-color: #1abc9c;
+}
+/* Responsive menu (for smaller screens) */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #34495e;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+  }
+
+  .navbar .nav-links.active {
+    display: flex;
+  }
+
+  .navbar .menu-toggle {
+    display: block;
+    cursor: pointer;
+    color: #ecf0f1;
+    font-size: 24px;
+  }
+  .canvas{
+      display: block;
+  }
+  .offcanvas .offcanvas-start{
+      width: 230px;
+  }
+  .navbar .logo img {
+    width: 104px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .btn-primary:hover{
+    background: #34495e;
+  }
+}
+
+/* Menu toggle (hidden by default) */
+.menu-toggle {
+  display: none;
+}
